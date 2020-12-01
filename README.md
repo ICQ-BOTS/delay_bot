@@ -1,7 +1,16 @@
+# [Отложенный постинг](https://icq.im/DelayBot)
 
-# Отложенный постинг
+<a href="https://icq.im/DelayBot"><img src="https://github.com/ICQ-BOTS/delay_bot/blob/main/delay.png" width="100" height="100"></a>
 
-[Отложенный постинг](https://icq.im/DelayBot)
+# Оглавление 
+ - [Описание](https://github.com/ICQ-BOTS/delay_bot#описание)
+ - [Установка](https://github.com/ICQ-BOTS/delay_bot#установка)
+ - [Скриншоты работы](https://github.com/ICQ-BOTS/delay_bot#скриншоты-работы)
+
+# Описание
+Бот для отложенных публикаций!
+
+# Установка
 
 Старт:
 1. Установка всех зависимостей 
@@ -26,3 +35,6 @@ python3 shed.py &
 python3 delay_bot.py
 ```
  
+# Скриншоты работы
+<img src="https://github.com/ICQ-BOTS/delay_bot/blob/main/img/1.png" width="400">
+<img src="https://github.com/ICQ-BOTS/delay_bot/blob/main/img/2.png" width="400">

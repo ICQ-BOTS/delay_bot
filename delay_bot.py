@@ -7,7 +7,7 @@ from bot.handler import (BotButtonCommandHandler, DefaultHandler,
 import config
 from server import (but_deletepost, but_deletepublic, but_post, but_public,
                     but_queuepublic, delete_public, main_message, queue_posts,
-                    setpublic_cm, settime_cm)
+                    setpublic_cm, settime_cm, add_post)
 
 bot = Bot(token=config.MAIN_TOKEN)
 bot.dispatcher.add_handler(StartCommandHandler(
@@ -19,26 +19,26 @@ bot.dispatcher.add_handler(HelpCommandHandler(
 
 bot.dispatcher.add_handler(MessageHandler(
     callback=setpublic_cm,
-    filters=Filter.regexp('^\/setpublic')
+    filters=Filter.regexp(r'^\/setpublic')
 ))
 
 bot.dispatcher.add_handler(MessageHandler(
     callback=settime_cm,
-    filters=Filter.regexp('^\/settime')
+    filters=Filter.regexp(r'^\/settime')
 ))
 
 bot.dispatcher.add_handler(MessageHandler(
     callback=delete_public,
-    filters=Filter.regexp('^\/delete')
+    filters=Filter.regexp(r'^\/delete')
 ))
 
 bot.dispatcher.add_handler(MessageHandler(
     callback=queue_posts,
-    filters=Filter.regexp('^\/queue')
+    filters=Filter.regexp(r'^\/queue')
 ))
 
 bot.dispatcher.add_handler(DefaultHandler(
-    callback=queue_posts
+    callback=add_post
 ))
 
 bot.dispatcher.add_handler(BotButtonCommandHandler(
